@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@theme{
+    --color-myprimary : #1D2130;
+    --color-mysecondary : #0C96E2;
+    --color-darkmode : #1B2431;
+}
+*{
+    box-sizing: border-box;
+}
+
+/* Dashed bottom border for main component in light mode */
+.borderHero{
+    border-bottom: 1px dashed;
+    border-image: repeating-linear-gradient(to right,  #1D2130 0 5px, transparent 5px 15px) 1;
+}
+
+/* Dashed bottom border for main component in dark mode */
+.borderHeroDark{
+    border-bottom: 1px dashed;
+    border-image: repeating-linear-gradient(to right,  white 0 5px, transparent 5px 15px) 1;
+}
+
+/* Dashed left border for timeline layout in light mode */
+.border-section{
+    border-left: 3px dashed;
+    border-image: repeating-linear-gradient(to bottom,  #1D2130 0 5px, transparent 5px 15px) 1;
+}
+
+/* Dashed left border for timeline layout in dark mode */
+.border-section-dark{
+    border-left: 3px dashed;
+    border-image: repeating-linear-gradient(to bottom,  white 0 5px, transparent 5px 15px) 1;
+}
+
+/* Slider thumb in Chrome/Safari – white circle with blue border and subtle shadow */
+.custom-range-slider {
+    -webkit-appearance: none; /* WebKit (Chrome, Safari) */
+    appearance: none;
+    width: 100%;
+    height: 8px; 
+    background: transparent; 
+}
+
+/* Slider thumb in Firefox – white circle with blue border and subtle shadow */
+.custom-range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: -6px; 
+    height: 20px;
+    width: 20px;
+    background: white; 
+    border: 3px solid  #0C96E2; 
+    border-radius: 50%;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    transition: 0.15s ease-in-out;
+}
+
+/* Slider thumb in Firefox – white circle with blue border and subtle shadow */
+.custom-range-slider::-moz-range-thumb {
+    height: 20px;
+    width: 20px;
+    background: white; 
+    border: 2px solid  #0C96E2; 
+    border-radius: 50%;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Slider track in Chrome/Safari – transparent to allow gradient styling */
+.custom-range-slider::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    background : transparent; 
+    border-radius: 8px;
+}
+
+/* Slider track in Firefox – light background with rounded edges */
+.custom-range-slider::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    background: #f3f4f6; 
+    border-radius: 4px;
+}
