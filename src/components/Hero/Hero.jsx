@@ -4,7 +4,7 @@ const Hero = ({defSize , title , description , btn , mode }) => {
          // Full-screen container with dynamic border and dark mode support
         <div className={`relative h-screen mt-[116px] w-[100%] dark:bg-darkmode   ${mode ? "borderHeroDark" :"borderHero"}`}>
             {/* Decorative background lines and dot */}
-            <img src="/assets/image/Lines.png" alt="Lines" className=' max-w-full absolute left-0 top-[75px] z-0' />
+            <img src="/assets/image/Lines.png" alt="Lines" className=' w-full absolute left-0 top-[75px] z-0' />
             <img src="./assets/image/dot.png" alt="dot" className=' absolute left-[50%] top-[100%] -translate-[50%]'/>
             {/* Main content layout: text on left, image on right */}
             <div className=' px-[20px] pt-[14px] lg:px-[70px] lg:flex lg:justify-between relative '>
