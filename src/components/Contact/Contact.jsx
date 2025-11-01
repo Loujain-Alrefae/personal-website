@@ -34,11 +34,15 @@ const Contact = ({title , des , defColor , phoneIcon , phoneTitle , mailIcon , m
                     </div>
                 </div>
                 {/* Contact form with Web3Forms integration */}
-                <form className="lg:w-[779.7px]" action="https://api.web3forms.com/submit" method="POST">
+                <form className="lg:w-[779.7px] mt-8" action="https://api.web3forms.com/submit" method="POST">
                     <input type="hidden" name="access_key" value="9a4d0e9b-0bec-4537-87d0-567140840e41"></input>
-                    <div className="w-[100%] flex gap-[26.5px]">
-                        <input type="text" name="name"  placeholder='Full name' required className='w-[50%]  py-4 pl-[26.5px] border border-solid border-[#BEC0BF] outline-[#BEC0BF] rounded-[8px] text-[#92929D] '/>
-                        <input type="email" name="email"  placeholder='Your email' required className='w-[50%]  py-4 pl-[26.5px] border border-solid border-[#BEC0BF] outline-[#BEC0BF] rounded-[8px]  text-[#92929D] '/>
+                    <div className="block lg:flex gap-5">
+                        <div className="w-full lg:w-[50%] ">
+                            <input type="text" name="name"  placeholder='Full name' required className='w-full py-4 pl-[26.5px] border border-solid border-[#BEC0BF] outline-[#BEC0BF] rounded-[8px] text-[#92929D] '/>
+                        </div>
+                        <div className="w-full lg:w-[50%] ">
+                            <input type="email" name="email"  placeholder='Your email' required className='w-full mt-6 lg:m-0 py-4 pl-[26.5px] border border-solid border-[#BEC0BF] outline-[#BEC0BF] rounded-[8px]  text-[#92929D] '/>
+                        </div>
                     </div>
                     <div className="">
                         <input type="text" name="number" i placeholder='Phone number' required className='w-[100%] my-6 py-4 pl-[26.5px] border border-solid border-[#BEC0BF] outline-[#BEC0BF] rounded-[8px]  text-[#92929D] '/>
