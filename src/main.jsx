@@ -22,7 +22,9 @@ const routes = createBrowserRouter([
       }
     ]
   }
-])
+] ,{
+  base : "/"
+})
 
 // Mount the router into the root DOM element
 createRoot(document.getElementById('root')).render(
