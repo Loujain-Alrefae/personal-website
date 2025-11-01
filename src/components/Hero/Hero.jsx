@@ -15,7 +15,7 @@ const Hero = ({defSize , title , description , btn , mode }) => {
                     <div className=' relative z-3 flex flex-col items-center justify-center text-center lg:items-start lg:text-left'>
                         <h1 className='lg:w-[645.6px] text-4xl sm:text-[55px] font-bold text-myprimary dark:text-white'><span className=' font-normal'>{defSize}</span>{title}</h1>
                         <p className=' md:w-[370px] text-[16px] md:text-[18px] text-[#43495B] pt-2 pb-[30px] dark:text-white'>{description}</p>
-                        <a href="/MyCV.pdf" download="MyCV.pdf"><button className=' w-[155px] h-[50px] bg-[#FFFFFF99] rounded-[6px] cursor-pointer text-myprimary dark:text-white dark:bg-[#0C96E299]'>{btn}</button></a>
+                        <a href="/MyCv.pdf" target="_blank" download="MyCV.pdf"><button className=' w-[155px] h-[50px] bg-[#FFFFFF99] rounded-[6px] cursor-pointer text-myprimary dark:text-white dark:bg-[#0C96E299]'>{btn}</button></a>
                     </div>
                 </div>
                 <div className=' h-[380px] w-[413px] relative hidden lg:block mt-[125px] mr-3 rounded-[50%] bg-[#DFE1FA]  z-0  '>
