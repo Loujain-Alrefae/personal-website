@@ -49,7 +49,7 @@ const Education = ({description , title , section1 , section2 , btn , mode}) => 
                     </div>
                 </div>
                 {/* Right timeline block (mirrored structure) */}
-                <div className={`lg:w-[567.8px] relative ${mode ? "border-section-dark": "border-section"}`}>
+                <div className={`mt-9 lg:w-[567.8px] lg:mt-0 relative ${mode ? "border-section-dark": "border-section"}`}>
                     <div className={` absolute -left-[10px] top-0 w-[20px] h-[20px] rounded-[50%] bg-mysecondary ${mode ?  " outline-2 outline-dashed outline-white" : "outline-2 outline-dashed outline-myprimary"}`}></div>
                     <div className={`absolute -left-[10px] top-[55%] w-[20px] h-[20px] rounded-[50%] bg-mysecondary ${mode ?  " outline-2 outline-dashed outline-white" : "outline-2 outline-dashed outline-myprimary"}`}></div>
                     <div className=" mb-[46px] ml-[70px]">
