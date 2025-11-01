@@ -61,7 +61,7 @@ export const projects = [
         title: "Interactive Product Management Panel",
         langs:"Html-Css3-javscript",
         link: "https://dashboard-task-henna.vercel.app",
-        dis : "Items Dashboard is a demo website that simulates a control panel for managing products in an interactive and organized way. It allows users to perform multiple actions such as adding new items, editing data, or deleting entries, with instant notifications displayed for each action—enhancing the user experience and reflecting a clear interaction logic. The site includes a dark/light mode toggle for visual comfort based on user preference, along with a real-time search feature within the product list to enable quick access to any item.",
+        dis : "Items Dashboard is a demo website that simulates a control panel for managing products in an interactive and organized way. It allows users to perform multiple actions such as adding new items, editing data, or deleting entries, with instant notifications displayed for each action enhancing the user experience and reflecting a clear interaction logic. The site includes a dark/light mode toggle for visual comfort based on user preference, along with a real-time search feature within the product list to enable quick access to any item.",
         framework : "tailwind CSS",
         libraries : "React.js",
         repo : "https://github.com/Loujain-Alrefae/Dashboard"
