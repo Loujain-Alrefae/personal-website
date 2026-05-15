@@ -25,7 +25,7 @@ const ShowProject = ({mode, arrowfull}) => {
         const newProject = projects.find(p => p.id === newProjectId);
         setCurrentProject(newProject);
         navigate(`/projects/${newProjectId}`)
-        };
+        }
     if (!currentProject) return null 
     return (
         <>

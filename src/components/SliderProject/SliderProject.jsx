@@ -28,7 +28,6 @@ const SliderProject = ({title , dis ,defcolor , arrowleft , areowright , arrowfu
         if(current === 0) setCurrent(maxStartPoint)
         else setCurrent(current - 1)
     }
-    
     const nextSlide =()=>{
         if(current >= maxStartPoint) setCurrent(0)
         else setCurrent(current + 1)
@@ -60,7 +59,7 @@ const SliderProject = ({title , dis ,defcolor , arrowleft , areowright , arrowfu
                         return(
                             <div key={index} onClick={() => swith(p.id)} className='shrink-0 cursor-pointer '
                                 style={{
-                                    width : `calc(${slideWidth}% - ${3.5}rem)`
+                                    width : `calc(${slideWidth}% - ${3}rem)`
                                 }}>
                                 <img src={p.img} alt={p.title} className=' w-[100%]  rounded-[8px] cursor-pointer' />
                                 <div className='pt-[32px] flex items-end justify-between '>

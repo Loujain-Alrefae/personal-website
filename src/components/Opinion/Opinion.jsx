@@ -4,9 +4,9 @@ const Opinion = ({title , description , defSize ,btn ,icon , onClick  }) => {
         // Section wrapper with spacing and layered background
         <div  className=" relative mb-[94px] ">
             {/* Rotated background layer for visual depth */}
-            <div className="inset-0 bg-mysecondary rotate-[-1.34deg] rounded-[32px] absolute top-0 left-[-6px] z-0 "></div>
+            <div className="inset-0 bg-mysecondary rotate-[-1.34deg] rounded-[32px] absolute top-0 left-[-6px] z-0 ml-[-15px] mr-[-15px] lg:ml-0 lg:mr-0"></div>
             {/* Main content container with purple background */}
-            <div className="  bg-[#583FBC] rounded-[32px] relative z-1 ">
+            <div className="  bg-[#583FBC] rounded-[32px] relative z-1 ml-[-20px] mr-[-20px] lg:ml-0 lg:mr-0">
                 <img src="/assets/image/lines-section.png" alt="Lines" className="w-[100%] h-[100%] absolute top-0 left-0 z-2" />
                 <div className="px-[25px]  py-[70px] md:px-[136px] flex justify-between flex-col text-center lg:flex-row lg:text-left items-center gap-7 ">
                     <div className=" lg:w-[589.18px]">
